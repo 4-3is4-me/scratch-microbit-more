@@ -1,1 +1,13 @@
-
+language: node_js
+sudo: required
+dist: xenial
+addons:
+    chrome: stable
+node_js:
+- 10
+env:
+  global:
+  - CHROMEDRIVER_VERSION=LATEST
+  - NODE_ENV=production
+  - NODE_OPTIONS=--max-old-space-size=7250
+  - NPM_TAG=latest
